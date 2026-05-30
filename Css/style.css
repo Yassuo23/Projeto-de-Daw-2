@@ -1,0 +1,210 @@
+:root {
+    --Skyblue: #5ec0cc;
+    --cream: #f9e9cc;
+    --cinza: #636363;
+    --pink: #f0b3b8;
+    --green: #b9d7b1;
+    --yellow: #dab052;
+    --turquise: #3876a4;
+    --babyBlue: #a7c7e7;
+
+}
+
+ /* Todas as imagens do carrossel com o mesmo tamanho */
+        .carousel-item img {
+            width: 100%;
+            height: 80vh;         /* altura igual para todas */
+            max-height: 650px;    /* limite em telas grandes */
+            object-fit: cover;    /* recorta sem distorcer */
+            object-position: center;
+        }
+
+        /* Em telas pequenas, reduz a altura */
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 40vh;
+            }
+        }
+
+
+body {
+    background-color: var(--babyBlue);
+     font-family: "Climate Crisis", sans-serif;
+}
+
+#NavInicial {
+    display: flex;;
+    padding: 1rem 1rem;
+    background-color: var(--turquise);
+}
+
+#NavInicial ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-left: 35rem;
+    padding-top: 0.25rem;
+}
+
+#TituloSite {
+    text-decoration: none;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    color: var(--cream);
+}
+
+#disc {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--green);
+}
+
+#about {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--pink);
+}
+
+#prizes {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--yellow);
+}
+
+#NavInicial img {
+    width: 30px;
+    height: 30px;
+}
+
+#containerGeral {
+    display: flex;
+    padding: 2rem;
+    margin-top: 6rem;
+}
+
+#subtitulo {
+    font-size: 1.7rem;
+    color: var(--turquise);
+}
+
+#titulo {
+    font-size: 6rem;
+    color: var(--cream);
+}
+
+
+
+#rap {
+    color: var(--green);
+    font-size:2.5rem;
+    padding: 0.5rem;
+}
+
+#produtor {
+    color: var(--pink);
+    font-size:2.5rem;
+    padding: 0.5rem;
+}
+
+#criativo {
+    color: var(--yellow);
+    font-size:2.5rem;
+    padding: 0.5rem;
+}
+
+#estilista {
+    color: var(--turquise);
+    font-size:2.5rem;
+    padding: 0.5rem;
+}
+
+#container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 6rem;
+}
+
+#portrait1 {
+    width: 42rem;
+    height: 80vh;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--babyBlue);
+    position: relative;
+
+    
+}
+
+#portrait1 .carousel-indicators {
+    position: absolute;
+    left: 35%;
+    transform: translateX(-50%);
+    padding: 0;
+    z-index: 10; /* Garante que os botões fiquem na frente da imagem */
+    
+    /* Se o Bootstrap sumir com o display flex, reforce aqui: */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre as bolinhas */
+}
+
+#albuns img {
+    width: 50rem;       /* Garante que ocupe toda a largura disponível */
+    height: 40rem;     /* Força TODAS as imagens a terem exatamente a mesma altura */
+    object-fit: cover; /* Corta as sobras da imagem proporcionalmente para não distorcer */
+    object-position: center;
+}
+
+/* Aplica-se tanto ao slide normal quanto ao fade */
+.carousel-item {
+    /* Altere '1s' (1 segundo) para o tempo que achar melhor. O padrão do Bootstrap é 0.6s */
+    transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
+}
+
+#container3 {
+    display: block;
+    clear: both;
+    padding-top: 6rem;
+    margin-top: 6rem;
+    background-color: var(--cream);
+}
+
+#subtitulo2 {
+    font-size: 2.5rem;
+    color: var(--turquise);
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#sobre {
+    font-size: 1rem;
+    color: var(--cinza);
+    text-align: justify;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+}
+
+#EyePeas {
+    color: var(--babyBlue);
+    text-decoration: none;
+}
+
+-- Animação de fade-in para os elementos revelados --
+
+.unrevealed {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
