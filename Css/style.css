@@ -174,12 +174,27 @@ body {
     background-color: var(--cream);
 }
 
+#container4 {
+    display: block;
+    clear: both;
+    height: 20rem;
+    padding-top: 0;
+    margin-top: 0;
+    background-color: var(--turquise);
+}
+
 #subtitulo2 {
     font-size: 2.5rem;
     color: var(--turquise);
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-bottom: 0;
+}
+
+#subtitulo3 {
+    margin-top: 0;
+    padding-top: 3rem;
 }
 
 #sobre {
@@ -196,7 +211,7 @@ body {
     text-decoration: none;
 }
 
--- Animação de fade-in para os elementos revelados --
+/* Animação de fade-in para os elementos revelados */
 
 .unrevealed {
     opacity: 0;
@@ -207,4 +222,9 @@ body {
 .revealed {
     opacity: 1;
     transform: translateY(0);
+}
+
+#prizes {
+    text-align: justify;
+
 }
