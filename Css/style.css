@@ -42,7 +42,7 @@ body {
     list-style: none;
     display: flex;
     gap: 2rem;
-    padding-left: 35rem;
+    padding-left: 60rem;
     padding-top: 0.25rem;
 }
 
@@ -124,7 +124,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-left: 6rem;
+    padding-left: 20rem;
 }
 
 #portrait1 {
@@ -154,11 +154,12 @@ body {
 }
 
 #albuns img {
-    width: 50rem;       /* Garante que ocupe toda a largura disponível */
-    height: 40rem;     /* Força TODAS as imagens a terem exatamente a mesma altura */
+    width: 70rem;       /* Garante que ocupe toda a largura disponível */
+    height: 60rem;     /* Força TODAS as imagens a terem exatamente a mesma altura */
     object-fit: cover; /* Corta as sobras da imagem proporcionalmente para não distorcer */
     object-position: center;
 }
+
 
 /* Aplica-se tanto ao slide normal quanto ao fade */
 .carousel-item {
@@ -196,7 +197,7 @@ body {
     text-decoration: none;
 }
 
--- Animação de fade-in para os elementos revelados --
+/* Animação de fade-in para os elementos revelados */
 
 .unrevealed {
     opacity: 0;
@@ -207,4 +208,22 @@ body {
 .revealed {
     opacity: 1;
     transform: translateY(0);
+}
+
+#listaAlbuns {
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+#listaAlbuns li {
+    text-align: justify;
+    padding-bottom: 2rem;
+    color: #636363;
+    list-style: circle;
+
+}
+
+#mark {
+    color: var(--turquise);
 }
