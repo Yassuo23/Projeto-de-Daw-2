@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
-
+    
 
     <title>Tyler, The Creator</title>
 </head>
@@ -28,9 +28,22 @@
             <li><a id="disc">DISCOGRAFIA</a></li>
             <li><a id="about" href="#sobre">SOBRE</a></li>
             <li><a id="prizes">PREMIOS</a></li>
-            <li><a id="tema">TEMA</a></li>
+            <li><button id="tema">TEMA</button></li>
         </ul>
     </nav>
+
+    <nav id="sidebar">
+        <ul>
+            <li><h2 id="SidebarTitle">TEMAS</h2></li>
+            <li><button id="dontTheme">DON'T TAP THE GLASS</button></li>
+            <li><button id="ChromaTheme">CHROMAKOPIA</button></li>
+            <li><button id="CallMe">CALL ME IF YOU GET LOST</button></li>
+            <li><button id="IgorTheme">IGOR</button></li>
+            <li><button id="FlowerTheme">FLOWER BOY</button></li>
+        </ul>
+    </nav>
+
+    <div id="overlay"></div>
 
     <!-- data-bs-interval="3000" = troca a cada 3 segundos (em ms) -->
     <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -42,14 +55,14 @@
         </div>
 
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../Images/call.png" class="d-block w-100" alt="img1">
+            <div class="carousel-item active" >
+                <img src="../Images/call.png" class="d-block w-100" alt="img1" id="banner1">
             </div>
             <div class="carousel-item">
-                <img src="../Images/theStateSale.png" class="d-block w-100" alt="img2">
+                <img src="../Images/theStateSale.png" class="d-block w-100" alt="img2" id="banner2">
             </div>
             <div class="carousel-item">
-                <img src="../Images/lost.jpeg" class="d-block w-100" alt="img3">
+                <img src="../Images/lost.jpeg" class="d-block w-100" alt="img3" id="banner3">
             </div>
         </div>
 
@@ -122,7 +135,6 @@
             </div>
         </div>
 
-
     </div>
 
    <!--Sobre o Tyler-->
@@ -142,6 +154,33 @@
             <li><a id="mark">CHROMAKOPIA (2024)</a>: Continuando sua tradição de inovação e narrativas conceituais, explorando novas facetas de sua maturidade artística e pessoal.</li>
         </ul>
 
+    </div>
+
+    <div id="container4" class="unrevealed">
+        <h1 id="subtitulo3">TYLER NA MODA</h1>
+           <p id="moda">Tyler, the Creator é muito mais do que um rapper e produtor genial; ele é um dos nomes mais disruptivos e influentes da moda contemporânea. Seu estilo pessoal — que mistura a rebeldia do skate da Califórnia, alfaiataria clássica, tons pastel e uma estética vintage — mudou a forma como o hip-hop e a cultura pop enxergam o ato de se vestir. Abaixo, conheça a jornada de Tyler na moda através de suas principais marcas, conquistas e prêmios.</p> 
+
+            <ul id="marcas">
+                <li><a style="color: var(--green);">GOLF WANG</a> : Sua primeira marca independente, focada em um streetwear vibrante, colorido e bem-humorado.</li>
+                <li><a style="color: var(--pink);">le FLEUR</a> :* Sua marca de luxo com foco em uma estética vintage e sofisticada, que recentemente encerrou a linha de roupas para focar em fragrâncias, esmaltes e acessórios.</li>
+                <li><a style="color: var(--Skyblue)">Colaborações de Peso</a> : Parcerias de grande sucesso com marcas como Converse e uma coleção-cápsula histórica desenhada para a grife de alta costura Louis Vuitton.</li>
+                <li><a style="color: var(--yellow)">Prêmios e Reconhecimento</a> : Eleito como um dos homens mais bem-vestidos do mundo por revistas como a GQ e premiado como Inovador Cultural do Ano pela WSJ. Magazine.</li>
+            </ul>
+    </div>
+
+    <div id="container5" class="unrevealed">
+        <h1 id="subtitulo4">DISCOGRAFIA</h1>
+
+            <div id="discography">
+                <div id="dontTap" class="disco"><img src="../Images/Dont.jpg"></div>
+                <div id="chroma" class="disco"><img src="../Images/Chroma.jpg"></div>
+                <div id="Call" class="disco"><img src="../Images/cmiyglo.jpg"></div>
+                <div id="igor" class="disco"><img src="../Images/IgorCover.jpg"></div>
+                <div id="flower" class="disco"><img src="../Images/FlowerBoy.jpg"></div>
+                <div id="cherryBomb" class="disco"><img src="../Images/cherry.jpg"></div>
+                <div id="wolf" class="disco"><img src="../Images/Wolf.jpg"></div>
+                <div id="chroma" class="disco"><img src="../Images/Goblincover.jpg"></div>
+            </div>
     </div>
 
 

@@ -6,14 +6,21 @@
     --green: #b9d7b1;
     --yellow: #dab052;
     --turquise: #3876a4;
+    --darkBlue: #2a506d;
     --babyBlue: #a7c7e7;
+    --grey: #3b3b3b;
+    --darkGrey: #2c2c2c;
+    --chromaGreen: #048d47;
+    --darkGreen: #1b5234;
+    --red: #bb2f2c;
+
 
 }
 
  /* Todas as imagens do carrossel com o mesmo tamanho */
         .carousel-item img {
             width: 100%;
-            height: 80vh;         /* altura igual para todas */
+            height: 90vh;         /* altura igual para todas */
             max-height: 650px;    /* limite em telas grandes */
             object-fit: cover;    /* recorta sem distorcer */
             object-position: center;
@@ -29,20 +36,23 @@
 
 body {
     background-color: var(--babyBlue);
-     font-family: "Climate Crisis", sans-serif;
+    font-family: "Climate Crisis", sans-serif;
+    display: grid;
+    position: relative;
 }
 
 #NavInicial {
     display: flex;;
     padding: 1rem 1rem;
     background-color: var(--turquise);
+    z-index: 1000;
 }
 
 #NavInicial ul {
     list-style: none;
     display: flex;
     gap: 2rem;
-    padding-left: 60rem;
+    padding-left: 28rem;
     padding-top: 0.25rem;
 }
 
@@ -80,8 +90,10 @@ body {
 
 #containerGeral {
     display: flex;
-    padding: 2rem;
-    margin-top: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 #subtitulo {
@@ -90,33 +102,31 @@ body {
 }
 
 #titulo {
-    font-size: 6rem;
+    font-size: 5.4rem;
     color: var(--cream);
 }
 
-
-
 #rap {
     color: var(--green);
-    font-size:2.5rem;
+    font-size:2.4rem;
     padding: 0.5rem;
 }
 
 #produtor {
     color: var(--pink);
-    font-size:2.5rem;
+    font-size:2.4rem;
     padding: 0.5rem;
 }
 
 #criativo {
     color: var(--yellow);
-    font-size:2.5rem;
+    font-size:2.4rem;
     padding: 0.5rem;
 }
 
 #estilista {
     color: var(--turquise);
-    font-size:2.5rem;
+    font-size:2.4rem;
     padding: 0.5rem;
 }
 
@@ -124,17 +134,19 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-left: 20rem;
+    padding-left: 4rem;
 }
 
+
 #portrait1 {
-    width: 42rem;
-    height: 80vh;
+    width: 40rem;
+    height: 60vh;
     display: inline-block;
     justify-content: center;
     align-items: center;
     background-color: var(--babyBlue);
     position: relative;
+    border-radius: 10px;
 
     
 }
@@ -154,12 +166,12 @@ body {
 }
 
 #albuns img {
-    width: 70rem;       /* Garante que ocupe toda a largura disponível */
-    height: 60rem;     /* Força TODAS as imagens a terem exatamente a mesma altura */
+    width: 30rem;       /* Garante que ocupe toda a largura disponível */
+    height: 40rem;     /* Força TODAS as imagens a terem exatamente a mesma altura */
     object-fit: cover; /* Corta as sobras da imagem proporcionalmente para não distorcer */
     object-position: center;
+    border-radius: 10px;
 }
-
 
 /* Aplica-se tanto ao slide normal quanto ao fade */
 .carousel-item {
@@ -171,7 +183,7 @@ body {
     display: block;
     clear: both;
     padding-top: 6rem;
-    margin-top: 6rem;
+    padding-bottom: 4rem;
     background-color: var(--cream);
 }
 
@@ -179,7 +191,6 @@ body {
     font-size: 2.5rem;
     color: var(--turquise);
     text-align: center;
-    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -226,4 +237,197 @@ body {
 
 #mark {
     color: var(--turquise);
+}
+
+#container4 {
+    display: block;
+    clear: both;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    background-color: var(--turquise);
+    height: 100%;
+}
+
+#subtitulo3 {
+    font-size: 2.5rem;
+    color: var(--yellow);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#moda {
+    color: var(--cream);
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: justify;
+}
+
+#marcas {
+    color: var(--cream);
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: justify;
+}
+
+#marcas li{
+    padding-top: 2rem;
+}
+
+#container5 {
+    display: block;
+    clear: both;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    background-color: var(--babyBlue);
+    height: 100%;
+}
+
+#subtitulo4 {
+    font-size: 3rem;
+    color: var(--cream);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#discography {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    width: 90%;
+    gap: 2rem;
+    padding-top: 3rem;
+    flex-wrap: wrap; /* Permite que os discos quebrem para a próxima linha se não houver espaço suficiente */
+}
+
+.disco {
+    width: 17rem;       /* Garante que ocupe toda a largura disponível */
+    height: 17rem;     /* Força TODAS as imagens a terem exatamente a mesma altura */
+    object-fit: cover; /* Corta as sobras da imagem proporcionalmente para não distorcer */
+}
+
+.disco img {
+    width: 100%;
+    height: 40vh;         /* altura igual para todas */
+    max-height: 650px;    /* limite em telas grandes */
+    object-fit: cover;    /* recorta sem distorcer */
+    object-position: center;
+    border-radius: 10px;
+    transition: 0.3s; /* Faz a imagem ficar redonda */
+}
+
+.disco img:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 5% */
+    transition: transform 0.3s; /* Animação suave */
+}
+
+/*Abrir sidebar*/
+
+.open-sidebar {
+    left: 0; /* Move a barra para dentro da tela */
+}
+
+
+#sidebar {
+    left: 0; /* Esconde a barra fora da tela */ /* Garante que a barra fique acima de outros elementos */
+    z-index: 900;
+    position: fixed;
+    top: 60px; /* Garante que a barra fique acima de outros elementos */
+    background-color: var(--darkBlue);
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    width: 265px;
+    height: 100%;
+    padding-top: 2rem;
+}
+
+#sidebar.open {
+    transform: translateX(0);
+    transition: transform 0.35s ease;
+  }
+
+#sidebar ul {
+    list-style-type: none;
+}
+
+#SidebarTitle {
+    color: var(--cream);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding-left: 1.4rem;
+    padding-right: 1rem;
+}
+
+#ChromaTheme {
+    color: var(--Skyblue);
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    background-color: transparent; /* Garante que o fundo seja transparente */
+    border: none; /* Remove qualquer borda */
+    
+}
+
+#IgorTheme {
+    color: var(--Skyblue);
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+    padding-bottom: 1rem;
+    background-color: transparent; /* Garante que o fundo seja transparente */
+    border: none; /* Remove qualquer borda */
+}
+
+#FlowerTheme {
+    color: var(--Skyblue);
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+    padding-bottom: 1rem;
+    background-color: transparent; /* Garante que o fundo seja transparente */
+    border: none; /* Remove qualquer borda */
+}
+
+#dontTheme {
+    color: var(--Skyblue);
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+    padding-bottom: 1rem;
+    background-color: transparent; /* Garante que o fundo seja transparente */
+    border: none; /* Remove qualquer borda */
+}
+
+#CallMe {
+    color: var(--Skyblue);
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+    padding-bottom: 1rem;
+    background-color: transparent; /* Garante que o fundo seja transparente */
+    border: none; /* Remove qualquer borda */
+}
+
+#overlay {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    z-index: 800;
+}
+
+#overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+#tema {
+    border: 0px;
+    background-color: transparent;
 }
