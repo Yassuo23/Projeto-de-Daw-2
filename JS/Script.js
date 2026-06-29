@@ -6,7 +6,7 @@ const estrela1 = document.querySelector("#estrela1");
 const tituloSite = document.querySelector("#TituloSite");
 const disc = document.querySelector("#disc");
 const about = document.querySelector("#about");
-const prizes = document.querySelector("#prizes");
+const brands = document.querySelector("#Brands");
 const tema = document.querySelector("#tema");
 const sidebar = document.querySelector("#sidebar");
 const sidebarTitle = document.querySelector("#SidebarTitle");
@@ -107,7 +107,7 @@ const ChromakopiaTheme = (() => {
     tituloSite.style.color = "black";
     disc.style.color = "black";
     about.style.color = "black";
-    prizes.style.color = "black";
+    brands.style.color = "black";
 
     //SideBar//
 
@@ -140,9 +140,36 @@ const ChromakopiaTheme = (() => {
     subtitulo2.style.color = "var(--chromaGreen)";
     sobre.style.color = "var(--chromaGreen)";
     estilista.style.color = "var(--chromaGreen)";
-    mark.style.color = "white";
+    
+    mark.forEach(m => {
+        m.style.color = "white";
+    })
     listaAlbuns.style.color = "var(--chromaGreen)";
+    
+    Array.from(listaAlbuns.children).forEach(e => {
+        e.style.color = "var(--chromaGreen)";
+    })
 
+    //container 4//
+
+    container4.style.backgroundColor = "var(--chromaGreen)";
+    subtitulo3.style.color = "black";
+    moda.style.color = "black";
+    
+    Array.from(marcas.children).forEach( e =>{
+        e.style.color = "black";
+    })
+
+    Array.from(marcas.querySelectorAll("a")).forEach( e => {
+        e.style.color = "white";
+    })
+
+    //container 5//
+
+    container5.style.backgroundColor = "var(--darkGrey)"
+    subtitulo4.style.color = "var(--chromaGreen)"
 })
 
 chromaThemeButton.addEventListener("click", ChromakopiaTheme);
+
+console.log(marcas.querySelectorAll("a"))
